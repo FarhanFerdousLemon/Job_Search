@@ -19,6 +19,9 @@ class HomeAppbar extends StatelessWidget {
                     "Welcome Home",
                     style: TextStyle(fontSize: 18),
                   ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Text(
                     "Annay Bryant",
                     style: TextStyle(fontSize: 30, fontWeight: FontWeight.w800),
@@ -34,7 +37,7 @@ class HomeAppbar extends StatelessWidget {
                           angle: -0.5,
                           child: Icon(
                             Icons.notifications_none_outlined,
-                            size: MediaQuery.of(context).size.width * .08,
+                            size: MediaQuery.of(context).size.width * .07,
                           ),
                         ),
                         Positioned(

@@ -17,7 +17,7 @@ class JobSearch extends StatelessWidget {
           borderRadius: BorderRadius.circular(25),
         ),
         child: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: const EdgeInsets.only(top: 28, left: 25, right: 25),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -25,23 +25,27 @@ class JobSearch extends StatelessWidget {
                 "Fast Search",
                 style: TextStyle(fontSize: 25, color: Colors.white),
               ),
+              SizedBox(
+                height: 15,
+              ),
               Text(
-                "You can search quickly \nthe job you want",
+                "You can search quickly \n\nthe job you want",
                 style: TextStyle(fontSize: 17, color: Colors.white),
               ),
               SizedBox(
-                height: 25,
+                height: 55,
               ),
               TextField(
                 decoration: InputDecoration(
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(30),
-                      borderSide: BorderSide.none,
-                    ),
-                    filled: true,
-                    fillColor: Colors.white,
-                    prefixIcon: Icon(Icons.search),
-                    hintText: "Search"),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(30),
+                    borderSide: BorderSide.none,
+                  ),
+                  filled: true,
+                  fillColor: Colors.white,
+                  prefixIcon: Icon(Icons.search),
+                  hintText: "Search",
+                ),
               )
             ],
           ),

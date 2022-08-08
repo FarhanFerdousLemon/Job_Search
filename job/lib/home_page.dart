@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:job/widget/home_appbar.dart';
+import 'package:job/widget/job_list.dart';
 import 'package:job/widget/job_search.dart';
 import 'package:job/widget/tag_list.dart';
 
@@ -28,8 +29,10 @@ class _HomePageState extends State<HomePage> {
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Column(
-              children: [HomeAppbar(), JobSearch(), TagList()],
+            child: SingleChildScrollView(
+              child: Column(
+                children: [HomeAppbar(), JobSearch(), TagList(), JobList()],
+              ),
             ),
           )
         ],
